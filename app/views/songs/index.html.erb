@@ -1,4 +1,4 @@
-<% @song.each do |song| %>
+<% @songs.each do |song| %>
   <h1><%= song.name %></h1>
   <p><%= link_to song.genre, song_path(song) %> | <%= link_to song.artist, song_path(song) %></p>
   <% end %>
